@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Drinks Calculator</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="genderTitle">Select a Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="weightTitle">Input Your Weight</string>
+    <string name="weightHint">Weight</string>
+
+    <string name="ageTitle">Input Your Age</string>
+    <string name="ageHint">Age</string>
+
+    <string name="drinkTitle">Select a Drink</string>
+    <string name="beer">Beer</string>
+    <string name="wine">Wine</string>
+    <string name="vodka">Vodka</string>
+
+    <string name="submit">Submit</string>
+    <string name="title_activity_drinks_calculation">Drinks Calculation</string>
+
+    <string name="classification">Classification:</string>
+    <string name="sober">Sober:</string>
+    <string name="tipsy">Tipsy:</string>
+    <string name="drunk">Drunk:</string>
+    <string name="wasted">Wasted:</string>
+    <string name="blackout">Blackout:</string>
+
+</resources>
