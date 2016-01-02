@@ -18,6 +18,7 @@ public class DrinksVariableSelection extends AppCompatActivity {
     public final static String AGE = "com.diagraphictech.helloworld.AGE";
     public final static String WEIGHT = "com.diagraphictech.helloworld.WEIGHT";
     public final static String GENDER = "com.diagraphictech.helloworld.GENDER";
+    public final static String FOOD = "com.diagraphictech.helloworld.FOOD";
     public final static String DRINK = "com.diagraphictech.helloworld.DRINK";
 
 
@@ -57,14 +58,15 @@ public class DrinksVariableSelection extends AppCompatActivity {
 
         String age_val = ((EditText) findViewById(R.id.age)).getText().toString();
         String weight_val = ((EditText) findViewById(R.id.weight)).getText().toString();
+        String food_val = ((EditText) findViewById(R.id.food)).getText().toString();
+        String drink_val = ((EditText) findViewById(R.id.drink)).getText().toString();
 
         RadioGroup rg_gender = (RadioGroup)findViewById(R.id.radio_gender);
         String gender_val = ((RadioButton)findViewById(rg_gender.getCheckedRadioButtonId())).getText().toString();
-        RadioGroup rg_drink = (RadioGroup)findViewById(R.id.radio_drink);
-        String drink_val = ((RadioButton)findViewById(rg_drink.getCheckedRadioButtonId())).getText().toString();
 
         intent.putExtra(AGE, age_val);
         intent.putExtra(WEIGHT, weight_val);
+        intent.putExtra(FOOD, food_val);
         intent.putExtra(GENDER, gender_val);
         intent.putExtra(DRINK, drink_val);
         startActivity(intent);
