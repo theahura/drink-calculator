@@ -35,11 +35,17 @@ public class DrinksCalculation extends AppCompatActivity {
     private static int FULL_CONTENT = 3;
     private static int FULL = 4;
 
+    //Drink times per week
+    private static int NONE = 0;
+    private static int ONCE = 1;
+    private static int FEW = 2;
+    private static int MANY = 3;
+
     //Class scores
-    private static int LSCORE = 6;
-    private static int LMSCORE = 9;
-    private static int MSCORE = 11;
-    private static int HMSCORE = 14;
+    private static int LSCORE = 7;
+    private static int LMSCORE = 10;
+    private static int MSCORE = 14;
+    private static int HMSCORE = 17;
 
     private static int[] LIGHT = new int[]{0,1,2,4,5};
     private static int[] LIGHT_MID = new int[]{0,2,3,4,6};
@@ -127,8 +133,15 @@ public class DrinksCalculation extends AppCompatActivity {
     }
 
     private int getDrinkIntValue(int drink) {
-        //Can drink more beers than wine, and wine than vodka
-        return 0;
+        if(drink < 1) {
+            return NONE;
+        } else if (drink < 2) {
+            return ONCE;
+        } else if (drink < 3) {
+            return FEW;
+        } else {
+            return MANY;
+        }
     }
 
     private int getAgeIntValue(int age) {
