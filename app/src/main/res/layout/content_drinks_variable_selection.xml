@@ -4,45 +4,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_drinks_variable_selection"
     tools:context="com.diagraphictech.drinkscalculator.DrinksVariableSelection">
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="20dp">
-    </View>
-
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textColor="#000000"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
         android:typeface="sans"
         android:gravity="center"
+        android:background="#D24136"
         android:text="@string/genderTitle" />
-
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="10dp">
-    </View>
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/radio_gender"
         android:checkedButton="@+id/gender_male"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal"
+        android:background="#D24136"
         android:gravity="center">
         <RadioButton android:id="@id/gender_male"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="#FFFFFF"
             android:gravity="center"
             android:textSize="20sp"
             android:layout_marginLeft="20dp"
@@ -51,79 +42,98 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="#FFFFFF"
             android:gravity="center"
             android:textSize="20sp"
             android:layout_marginLeft="30dp"
             android:text="@string/female"/>
     </RadioGroup>
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="20dp">
-    </View>
-
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textColor="#000000"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:background="#EB8A3E"
         android:typeface="sans"
         android:gravity="center"
         android:text="@string/weightTitle" />
 
     <EditText android:id="@+id/weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#EB8A3E"
+        android:textColor="#FFFFFF"
         android:hint="@string/weightHint"
+        android:gravity="center"
         android:layout_gravity="center"
         android:inputType="number" />
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="20dp">
-    </View>
-
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textColor="#000000"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:background="#EBB582"
         android:typeface="sans"
         android:gravity="center"
         android:text="@string/ageTitle" />
 
     <EditText android:id="@+id/age"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#EBB582"
+        android:textColor="#FFFFFF"
         android:hint="@string/ageHint"
+        android:gravity="center"
         android:layout_gravity="center"
         android:inputType="number" />
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="20dp">
-    </View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:background="#50624D"
+        android:typeface="sans"
+        android:gravity="center"
+        android:text="@string/foodTitle" />
+
+    <EditText android:id="@+id/food"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#50624D"
+        android:textColor="#FFFFFF"
+        android:hint="@string/foodHint"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="number" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textColor="#000000"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:background="#785A46"
         android:typeface="sans"
         android:gravity="center"
         android:text="@string/drinkTitle" />
-
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="10dp">
-    </View>
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/radio_drink"
         android:checkedButton="@+id/beer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal"
+        android:background="#785A46"
         android:gravity="center">
         <RadioButton
             android:id="@id/beer"
@@ -131,6 +141,7 @@
             android:layout_height="wrap_content"
             android:layout_weight=".3"
             android:gravity="center"
+            android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:layout_marginLeft="10dp"
             android:text="@string/beer"/>
@@ -138,6 +149,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight=".3"
+            android:textColor="#FFFFFF"
             android:gravity="center"
             android:textSize="20sp"
             android:layout_marginLeft="10dp"
@@ -147,19 +159,20 @@
             android:layout_height="wrap_content"
             android:layout_weight=".3"
             android:gravity="center"
+            android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:layout_marginLeft="10dp"
             android:text="@string/vodka"/>
     </RadioGroup>
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="20dp">
-    </View>
-
     <Button
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
         android:layout_gravity="center"
         android:text="@string/submit"
         android:onClick="calculateDrinks"/>

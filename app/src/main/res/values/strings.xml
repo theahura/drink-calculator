@@ -12,6 +12,9 @@
     <string name="ageTitle">Input Your Age</string>
     <string name="ageHint">Age</string>
 
+    <string name="foodTitle"> Hours Since Last Meal </string>
+    <string name="foodHint">Hours</string>
+
     <string name="drinkTitle">Select a Drink</string>
     <string name="beer">Beer</string>
     <string name="wine">Wine</string>
