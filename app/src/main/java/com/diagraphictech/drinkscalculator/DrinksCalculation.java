@@ -35,7 +35,7 @@ public class DrinksCalculation extends AppCompatActivity {
     private static int FULL_CONTENT = 3;
     private static int FULL = 4;
 
-    //Drink times per week
+    //Drink times per month
     private static int NONE = 0;
     private static int ONCE = 1;
     private static int FEW = 2;
@@ -49,9 +49,9 @@ public class DrinksCalculation extends AppCompatActivity {
 
     private static int[] LIGHT = new int[]{0,1,2,4,5};
     private static int[] LIGHT_MID = new int[]{0,2,3,4,6};
-    private static int[] MID = new int[]{0,3,4,6,8};
-    private static int[] HEAVY_MID = new int[]{0,3,5,7,9};
-    private static int[] HEAVY = new int[]{0,4,6,8,10};
+    private static int[] MID = new int[]{0,3,6,8,10};
+    private static int[] HEAVY_MID = new int[]{0,4,7,9,11};
+    private static int[] HEAVY = new int[]{0,5,8,10,13};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -135,9 +135,9 @@ public class DrinksCalculation extends AppCompatActivity {
     private int getDrinkIntValue(int drink) {
         if(drink < 1) {
             return NONE;
-        } else if (drink < 2) {
-            return ONCE;
         } else if (drink < 3) {
+            return ONCE;
+        } else if (drink < 5) {
             return FEW;
         } else {
             return MANY;

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.diagraphictech.drinkscalculator">
+    package="com.diagraphictech.drinkscalculator"
+    android:versionCode="1"
+    android:versionName="v1">
+
 
     <application
         android:allowBackup="true"

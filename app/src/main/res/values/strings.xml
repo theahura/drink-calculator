@@ -15,7 +15,7 @@
     <string name="foodTitle"> Hours Since Last Meal </string>
     <string name="foodHint">Hours</string>
 
-    <string name="drinkTitle">Drinking Sessions Per Week</string>
+    <string name="drinkTitle">Drinking Sessions Per Month</string>
     <string name="drinkHint">Drinks</string>
 
     <string name="submit">Submit</string>
